@@ -2,7 +2,7 @@
 @use "../utils/placeholders";
 
 .container {
-  max-width: func.container(1500, 110);
+  max-width: func.container(1600, 160);
   @extend %container;
 }
 
