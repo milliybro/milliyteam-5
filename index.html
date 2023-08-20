@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,33 +10,37 @@
 
 <body>
   <header id="header">
-    <div class="container">
-      <section class="navigation">
-        <div class="nav-container">
-          <div class="brand">
-            <a href="#!">{Finsweet</a>
-          </div>
-          <nav>
-        <div class="nav-mobile">
-          <a id="nav-toggle" href="#!"><span></span></a>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#!">Home</a></li>
-          <li><a href="#!">Shop</a></li>
-          <li>
-            <a href="#!">Services</a>
-            <ul class="nav-dropdown">
-              <li><a href="#!">Web Design</a></li>
-              <li><a href="#!">Web Development</a></li>
-              <li><a href="#!">Graphic Design</a></li>
-            </ul>
-          </li>
-          <li><a href="#!">About Us</a></li>
-          <li><a href="#!">Contact</a></li>
+    <div class="container header">
+      <a href="index.html">
+        <h1>{Finsweet</h1>
+      </a>
+      <ul class="header__link">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <h3><a href="#">Clone project <img src="image/home/right.svg" alt=""></a></h3>
+      </ul>
+      <div class="hamburger" id="navbar-open">
+        <img src="image/home/hamburger.svg" alt="hamburger-logo">
+      </div>
+      <div id="navbar-responsive">
+        <ul class="res-nav-list">
+          <li class="res-nav-item"><a href="index.html" class="res-nav-link">Home</a></li>
+          <li class="res-nav-item"><a href="service.html" class="res-nav-link">Service</a></li>
+          <li class="res-nav-item"><a href="company.html" class="res-nav-link">Company</a></li>
+          <li class="res-nav-item"><a href="career.html" class="res-nav-link">Career</a></li>
+          <li class="res-nav-item"><a href="blog.html" class="res-nav-link">Blog</a></li>
+          <li class="res-nav-item"><a href="contact.html" class="res-nav-link">Contact us</a></li>
+          <li class="res-nav-item"><button class="res-nav-btn">Clone project</button></li>
         </ul>
-      </nav>
-          </div>
-      </section>
+        <button id="navbar-close">
+          <img src="image/home/close.svg" alt="close">
+        </button>
+
+      </div>
     </div>
   </header>
   <script src="js/main.js"></script>

@@ -1,23 +1,14 @@
-(function($) {
-  $(function() {
-    $('nav ul li > a:not(:only-child)').click(function(e) {
-      $(this)
-        .siblings('.nav-dropdown')
-        .slideToggle()
-      $('.nav-dropdown')
-        .not($(this).siblings())
-        .hide()
-      e.stopPropagation()
-    })
-    $('html').click(function() {
-      $('.nav-dropdown').hide()
-    })
-    // Toggle open and close nav styles on click
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-    $('#nav-toggle').on('click', function() {
-      this.classList.toggle('active')
-    })
-  })
-})(jQuery)
+
+
+function openNavbar() {
+  document.getElementById("navbar-responsive").style.left = "0";
+  // document.getElementById("navbar-responsive").style.top = "0";
+}
+function closeNavbar() {
+  document.getElementById("navbar-responsive").style.left = "-100%";
+  // document.getElementById("navbar-responsive").style.top = "-100%";
+}
+
+document.getElementById("navbar-open").addEventListener("click", openNavbar);
+document.getElementById("navbar-close").addEventListener("click", closeNavbar);
+
